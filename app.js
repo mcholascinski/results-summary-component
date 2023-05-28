@@ -1,4 +1,4 @@
-fetch('https://github.com/mcholascinski/results-summary-component/blob/3f3d937a08063f1c21129f62fd4f02b9512d2496/data.json')
+fetch('./data.json')
   .then(response => response.json())
   .then(data => {
     console.log(data);
