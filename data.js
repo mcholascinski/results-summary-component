@@ -8,6 +8,6 @@ fetch('./data.json')
       document.getElementById('icon-' + (i + 1)).src = data[i].icon;
       scoreSum += data[i].score;
     }
-    document.getElementById('result').textContent = scoreSum;
+    document.getElementById('result').textContent = Math.round(scoreSum / data.length);
   })
   .catch(error => console.error('Error:', error));
